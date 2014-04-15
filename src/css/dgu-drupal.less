@@ -1357,7 +1357,21 @@ div.fivestar-widget-static .star span.off {
   .node-type-page             h3 { background-image: url('/assets/img/icon-page.png');            }
   .node-type-book             h3 { background-image: url('/assets/img/icon-book.png');            }
 }
-/* Tweak for IE8 */
+/* Tweak to nav search button - div width changes on different resolutions */
+.input-group-addon,
+.input-group-btn {
+  width: auto;
+}
+/* Tweak to nav search button - add independent search input button class */
+.search-input-button{
+  width:150px;
+  border-bottom-left-radius:5px;
+  border-top-left-radius:5px;
+  height: 30px;
+  padding-left: 10px;
+  font-size:12px;
+}
+/* Tweak to nav search button - to hide default search button */
 .noshow {
   display: none !important;
   width: 0px;

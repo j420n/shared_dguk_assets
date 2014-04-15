@@ -19,7 +19,12 @@ input[type="radio"],input[type="checkbox"]{margin-top:0}
 .container {
   width: 970px !important;
 }
-
+/* IE doesn't support display:table like other browsers */
+.input-group {
+    .input-group-btn {
+        display: inline;
+      }
+  }
 #blackbar {
   .input-group {
     .form-control {
